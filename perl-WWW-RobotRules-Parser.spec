@@ -9,14 +9,13 @@
 Summary:	WWW::RobotRules::Parser - parse robots.txt
 Summary(pl):	WWW::RobotRules::Parser - analiza robots.txt
 Name:		perl-WWW-RobotRules-Parser
-Version:	0.02
-Release:	0.2
+Version:	0.03
+Release:	0.1
 # "same as perl" (as in META.yml)
 License:	GPLv1 or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	a7b77fdd5084de92522bacb2049ef254
-Patch0:		%{name}-Makefile.PL.patch
+# Source0-md5:	2a0b81874450159fbf3fca65d3a032e9
 URL:		http://search.cpan.org/dist/WWW-RobotRules-Parser/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -44,8 +43,6 @@ pe³nym zestawem regu³ek.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
-%patch0 -p1
-# disable broken test
 mv t/99-pod-coverage.t t/99-pod-coverage.t.disabled
 grep -v 99-pod-coverage.t < MANIFEST >MANIFEST.mod
 mv -f MANIFEST.mod MANIFEST
