@@ -19,8 +19,9 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 URL:		http://search.cpan.org/dist/WWW-RobotRules-Parser/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-%if %{with autodeps} || %{with tests}
-BuildRequires:	perl-Pod-Coverage
+%if %{with tests}
+BuildRequires:	perl-Test-Pod
+BuildRequires:	perl-Test-Pod-Coverage
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -43,9 +44,6 @@ pe³nym zestawem regu³ek.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
-mv t/99-pod-coverage.t t/99-pod-coverage.t.disabled
-grep -v 99-pod-coverage.t < MANIFEST >MANIFEST.mod
-mv -f MANIFEST.mod MANIFEST
 
 %build
 %{__perl} Makefile.PL \
