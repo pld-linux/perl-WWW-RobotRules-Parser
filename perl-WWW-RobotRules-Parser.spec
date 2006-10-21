@@ -10,7 +10,7 @@ Summary:	WWW::RobotRules::Parser - parse robots.txt
 Summary(pl):	WWW::RobotRules::Parser - analiza robots.txt
 Name:		perl-WWW-RobotRules-Parser
 Version:	0.03
-Release:	0.1
+Release:	1
 # "same as perl" (as in META.yml)
 License:	GPLv1 or Artistic
 Group:		Development/Languages/Perl
