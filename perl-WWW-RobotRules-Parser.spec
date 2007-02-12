@@ -7,7 +7,7 @@
 %define		pdir	WWW
 %define		pnam	RobotRules-Parser
 Summary:	WWW::RobotRules::Parser - parse robots.txt
-Summary(pl.UTF-8):   WWW::RobotRules::Parser - analiza robots.txt
+Summary(pl.UTF-8):	WWW::RobotRules::Parser - analiza robots.txt
 Name:		perl-WWW-RobotRules-Parser
 Version:	0.03
 Release:	1
