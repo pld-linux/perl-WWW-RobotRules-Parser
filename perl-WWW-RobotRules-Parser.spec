@@ -7,7 +7,7 @@
 %define		pdir	WWW
 %define		pnam	RobotRules-Parser
 Summary:	WWW::RobotRules::Parser - parse robots.txt
-Summary(pl):	WWW::RobotRules::Parser - analiza robots.txt
+Summary(pl.UTF-8):   WWW::RobotRules::Parser - analiza robots.txt
 Name:		perl-WWW-RobotRules-Parser
 Version:	0.03
 Release:	1
@@ -34,13 +34,13 @@ consideration your user agent name when parsing. It just parses the
 structure and returns a hash containing the whole set of rules. You
 can then use this to do whatever you like with it.
 
-%description -l pl
+%description -l pl.UTF-8
 WWW::RobotRules::Parser pozwala na proste analizowanie pliku
 robots.txt zgodnie z opisem w
 <http://www.robotstxt.org/wc/norobots.html>, a ponadto, w
-przeciwieñstwie do WWW::RobotRules, ten modu³ nie analizuje podanej
-nazwy przegladrki, a jedynie strukturê i zwraca tablicê asocjacyjn± z
-pe³nym zestawem regu³ek.
+przeciwieÅ„stwie do WWW::RobotRules, ten moduÅ‚ nie analizuje podanej
+nazwy przegladrki, a jedynie strukturÄ™ i zwraca tablicÄ™ asocjacyjnÄ… z
+peÅ‚nym zestawem reguÅ‚ek.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
